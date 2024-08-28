@@ -10,6 +10,8 @@ import { navItems } from "@/data";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+import Problem from "@/components/Problem";
+
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
@@ -27,6 +29,7 @@ export default function Home() {
     <div className="max-w-7xl w-full">
       <FloatingNav navItems={navItems}/> 
       <Hero />
+      <Problem/> 
       <Grid />
       <RecentProjects />
       <Clients />

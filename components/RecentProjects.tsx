@@ -43,7 +43,7 @@ const RecentProjects = () => {
                             <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
                                 Check Live Site
                             </p>
-                            <FaLocationArrow className='ms-3' color='#CBACF9' />
+                            <FaLocationArrow className='ms-3' color='#3AFFB0' />
                         </div>
 
                     </div>
