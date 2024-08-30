@@ -25,7 +25,7 @@ const Hero = () => {
         </p>
         <a href='#about'>
           <MagicButton 
-            title='Book a free analysis'
+            title='Free Strategy Session'
             icon={<FaLocationArrow />}
             position='right'
           />
