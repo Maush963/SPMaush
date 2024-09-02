@@ -99,7 +99,7 @@ const PerfectSolution = () => {
     
     <div className='w-full pb-10 mb-[100px] md:mb-5 mt-40 z-40' id='Problem'>
         <div className='flex flex-col md:flex-row items-center justify-center'>
-    <h2 className=' lg:max-w-[40vw] font-bold text-2xl md:text-3xl text-center'>
+    <h2 className=' lg:max-w-[40vw] font-bold text-3xl md:text-4xl text-center'>
        Our Game <span className='text-purple'>Plan</span>
     </h2>
         </div>

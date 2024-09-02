@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Problem from "@/components/Problem";
 import { StarsBackground } from "@/components/ui/stars-background";
 import PerfectSolution from "@/components/PerfectSolution";
+import Clients from "@/components/Clients";
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
           <Hero />
           <PerfectSolution />
           <RecentProjects />
+          <Clients />
           <Problem />
           <Footer />
         </div>
