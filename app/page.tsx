@@ -3,14 +3,12 @@
 import { useEffect, useState } from "react";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import Grid from "@/components/Grid";
-import Clients from "@/components/Clients";
 import RecentProjects from "@/components/RecentProjects";
 import { navItems } from "@/data";
-import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 import Problem from "@/components/Problem";
+import { StarsBackground } from "@/components/ui/stars-background";
+import PerfectSolution from "@/components/PerfectSolution";
 
 
 export default function Home() {
@@ -27,16 +25,15 @@ export default function Home() {
   return (
    <main className="relative bg-slate flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
     <div className="max-w-7xl w-full">
-      <FloatingNav navItems={navItems}/> 
-      <Hero />
-      <Problem/> 
-      <Grid />
-      <RecentProjects />
-      <Clients />
-      <Experience />
-      <Approach />
-      <Footer />
-      
+      <StarsBackground className="absolute inset-0 z-0" />
+        <div className="relative z-10">
+          <FloatingNav navItems={navItems} />
+          <Hero />
+          <PerfectSolution />
+          <RecentProjects />
+          <Problem />
+          <Footer />
+        </div>
     </div>
    </main>
   );

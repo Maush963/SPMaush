@@ -3,18 +3,25 @@ import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import { socialMedia } from '../data'
 import { div } from 'three/webgpu'
+import { Highlight } from './ui/Hero-highlight'
 
 const Footer = () => {
   return (
-    <footer className='w-full pb-10 mb-[100px] md:mb-5' id='contact'>
+    <footer className='w-full pb-10 mt-[100px] mb-[100px] md:mb-5' id='contact'>
 
         <div className='flex flex-col items-center'>
-            <h1 className='heading lg:max-w-[45vw]'>
-                Ready to take <span className='text-purple'>your</span> digital presence to the next level?
-            </h1>
-            <p className='text-white-200 md:mt-10 my-5 text-center'>
-                Reach out to me today and let&apos;s discuss how I can help you achieve your goals.
+                <div className='w-full pb-10 mt-40 z-40' id='Problem'>
+                <div className='flex flex-col md:flex-row items-center justify-center'>
+                <div className='md:w-1/2'>
+            <h2 className='lg:max-w-[40vw] font-bold text-2xl md:text-3xl text-center'>
+            Exclusive Attention & <span className='text-purple'> <Highlight  className='text-black' >Premium Results</Highlight></span>
+            </h2>
+            <p className='text-white-200 my-5 text-justify'>
+            I offer a unique approach, combining my software engineering expertise for analysis and automation with my copywriting skills to enhance sales. If there's something new to learn, I'm always eager to dive in and figure it out.
             </p>
+                </div>
+                </div>
+            </div>
             <a href="mailto:maush.solutions@gmail.com">
             <MagicButton
                 title="Free Strategy Session"
@@ -24,7 +31,7 @@ const Footer = () => {
         </a>
         </div>
         <div className='flex mt-16 md:flex-row flex-column justify-between items-center'>
-            <p className='md:text-base text-sm md:font-normal font-light'>Copyright © 2024 Mauricio</p>
+            <p className='md:text-base text-sm md:font-normal font-light'>Copyright © 2024 Maush</p>
 
             <div className='flex items-center md:gap-3 gap-6'>
                 {socialMedia.map((profile) => (
