@@ -28,14 +28,14 @@ interface TimelineEntry {
       title: 'Plan',
       content: (
         <div className="flex flex-col md:flex-row justify-center items-center">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 order-2 md:order-1">
           <img
             src="https://maush963.github.io/Imagesformysalespage/thumbnail.jpeg"
             alt="thumbnail"
             className="rounded-lg object-cover h-40 md:h-44 lg:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-        <div className="md:w-1/2 p-3">
+        <div className="md:w-1/2 p-3 order-1 md:order-2">
           <p className='text-white-200 md:mt-5 my-5 text-wrap'>Based on our analysis, we select one of our <span className='font-bold text-white'>three tailored solutions</span> or customize one to fit your goals.</p>
         </div>
       </div>
@@ -62,14 +62,14 @@ interface TimelineEntry {
         title: 'Engagement',
         content: (
             <div className="flex flex-col md:flex-row justify-center items-center">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 order-2 md:order-1">
               <img
                 src="https://maush963.github.io/Imagesformysalespage/2house.jpeg"
                 alt="2house"
                 className="rounded-lg object-cover h-40 md:h-44 lg:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
               />
             </div>
-            <div className="md:w-1/2 p-3">
+            <div className="md:w-1/2 p-3 order-1 md:order-2">
               <p className='text-white-200 md:mt-5 my-5 text-wrap'>Grow and engage your audience with content strategies based on analyzing top-performing niche videos to uncover <span className='font-bold text-white'>key success patterns.</span></p>
             </div>
           </div>
