@@ -6,8 +6,11 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Maush Portfolio",
-  description: "A software developer aproach to a copywriting portfolio",
+  title: "Maush - Growth Partner",
+  description: "A software developer aproach to a copywriting Growth Partner",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({

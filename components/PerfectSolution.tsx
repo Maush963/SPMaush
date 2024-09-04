@@ -12,12 +12,12 @@ interface TimelineEntry {
       content: (
         <div className="flex flex-col md:flex-row justify-center items-center">
         <div className="md:w-1/2 p-3">
-          <p className='text-white-200 md:mt-5 my-5 text-wrap'>We start with a complete funnel analysis and goal clarification, then conduct market and competitors' research to identify <span className='font-bold text-white'>where to focus our efforts.</span></p>
+          <p className='text-white-200 md:mt-5 my-5 text-wrap'>We start with a comprehensive funnel analysis and goal clarification, followed by market and competitor research to identify <span className='font-bold text-white'>where to focus our efforts.</span></p>
         </div>
         <div className="md:w-1/2">
           <img
-            src="Analyse.jpeg"
-            alt="Analyse.jpeg"
+            src="https://maush963.github.io/Imagesformysalespage/Analyse.jpeg"
+            alt="Analyse"
             className="rounded-lg object-cover h-40 md:h-44 lg:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
@@ -30,8 +30,8 @@ interface TimelineEntry {
         <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="md:w-1/2">
           <img
-            src="thumbnail.jpeg"
-            alt="thumbnail.jpeg"
+            src="https://maush963.github.io/Imagesformysalespage/thumbnail.jpeg"
+            alt="thumbnail"
             className="rounded-lg object-cover h-40 md:h-44 lg:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
@@ -42,16 +42,16 @@ interface TimelineEntry {
       ),
     },
     {
-        title: 'Conversions and Sales',
+        title: 'Conversions',
         content: (
             <div className="flex flex-col md:flex-row justify-center items-center">
         <div className="md:w-1/2 p-3">
-          <p className='text-white-200 md:mt-5 my-5 text-wrap'>Boost conversions with our main offer, featuring compelling VSL scripts/videos and <span className=' text-purple font-extrabold'>high-quality sales pages</span> with stunning design and persuasive copy.</p>
+          <p className='text-white-200 md:mt-5 my-5 text-wrap'>Enhance conversions with our main offer, featuring compelling VSL scripts/videos and <span className=' text-purple font-extrabold'>high-quality sales pages</span> with stunning design and persuasive copy.</p>
         </div>
         <div className="md:w-1/2">
           <img
-            src="1house.jpeg"
-            alt="1house.jpeg"
+            src="https://maush963.github.io/Imagesformysalespage/1house.jpeg"
+            alt="1house"
             className="rounded-lg object-cover h-40 md:h-44 lg:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
@@ -59,13 +59,13 @@ interface TimelineEntry {
         ),
     },
     {
-        title: 'Reach and Engagement',
+        title: 'Engagement',
         content: (
             <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="md:w-1/2">
               <img
-                src="2house.jpeg"
-                alt="2house.jpeg"
+                src="https://maush963.github.io/Imagesformysalespage/2house.jpeg"
+                alt="2house"
                 className="rounded-lg object-cover h-40 md:h-44 lg:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
               />
             </div>
@@ -76,16 +76,16 @@ interface TimelineEntry {
         ),
     },
     {
-        title: 'Automation for Efficiency',
+        title: 'Automation',
         content: (
             <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="md:w-1/2 p-3">
-              <p className='text-white-200 md:mt-5 my-5 text-wrap'><span className='font-bold text-white'>Boost efficiency</span> with email automation, process improvements, and Virtual Assistant support to save you time and enhance engagement.</p>
+              <p className='text-white-200 md:mt-5 my-5 text-wrap'><span className='font-bold text-white'>Boost efficiency</span> with email automation, process improvements, or Virtual Assistant support to save you time and enhance engagement.</p>
             </div>
             <div className="md:w-1/2">
               <img
-                src="3house.jpeg"
-                alt="3house.jpeg"
+                src="https://maush963.github.io/Imagesformysalespage/3house.jpeg"
+                alt="3house"
                 className="rounded-lg object-cover h-40 md:h-44 lg:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
               />
             </div>
@@ -97,7 +97,7 @@ interface TimelineEntry {
 const PerfectSolution = () => {
   return (
     
-    <div className='w-full pb-10 mb-[100px] md:mb-5 mt-40 z-40' id='Problem'>
+    <div className='w-full pb-10 mb-[100px] md:mb-5 mt-40 z-40' id='process'>
         <div className='flex flex-col md:flex-row items-center justify-center'>
     <h2 className=' lg:max-w-[40vw] font-bold text-3xl md:text-4xl text-center'>
        Our Game <span className='text-purple'>Plan</span>

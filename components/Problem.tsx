@@ -14,7 +14,11 @@ const Problem = () => {
     </p>
         </div>
         <div className='md:w-1/2 flex justify-center '>
-          <img src="Maush.jpeg" alt="Maush.jpeg" className='w-4/5 h-full rounded-lg shadow-md shadow-purple '/>
+        <img 
+            src="https://maush963.github.io/Imagesformysalespage/Maush.jpeg" 
+            alt="Mauricio Salas" 
+            className='w-4/5 h-full rounded-lg shadow-md shadow-purple'
+          />
         </div>
         </div>
     </div>

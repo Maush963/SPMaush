@@ -65,6 +65,21 @@
     --ring: 240 4.9% 83.9%;
   }
 }
+.circular-image-container {
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  height: 50px; /* Ajusta el tamaño según tus necesidades */
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-image {
+  width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  height: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+}
 
 @layer base {
   * {

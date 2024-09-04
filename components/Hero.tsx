@@ -18,12 +18,12 @@ const Hero = () => {
         <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
           Calisthenics coaches and fitness skool owners  
         </h2>  
-        <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl' words='Reach your full income potential with personnalized optimization' />
+        <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl' words='Maximize your income potential with personalized optimization' />
         
         <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-          Data-backed strategies that will help you grow your income, expand your audience, based on your specific needs.
+        Leverage data-driven strategies to boost your earnings and expand your audience, tailored to your specific goals.
         </p>
-        <a href='#about'>
+        <a href='https://calendly.com/maush-solutions/15min-onboarding-call'>
           <MagicButton 
             title='Free Strategy Session'
             icon={<FaLocationArrow />}

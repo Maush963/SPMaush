@@ -1,72 +1,10 @@
+import { link } from "fs";
+
 export const navItems = [
-    { name: "About", link: "#about" },
+    { name: "Process", link: "#process" },
     { name: "Projects", link: "#projects" },
     { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
-  ];
-  
-  export const gridItems = [
-    {
-      id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
-      img: "/b1.svg",
-      spareImg: "",
-    },
-    {
-      id: 2,
-      title: "I'm very flexible with time zone communications",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-center",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
-    },
-  
-    {
-      id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
-    },
-    {
-      id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
-      spareImg: "",
-    },
   ];
   
   export const projects = [
@@ -74,8 +12,12 @@ export const navItems = [
       id: 1,
       title: "Calisthenics Businesses Funnel Analysis",
       des: "In-depth analysis of top-performing calisthenics Skool communities, focusing on strategies used across all stages.",
-      img: "/MicroBusinessAnalysis.png",
-      iconLists: ["/docs.svg", "/sql.svg", "/R.png",],
+      img: "https://maush963.github.io/Imagesformysalespage/MicroBusinessAnalysis.png",
+      iconLists: [
+        "https://maush963.github.io/Imagesformysalespage/docs.svg",
+        "https://maush963.github.io/Imagesformysalespage/sql.svg",
+        "https://maush963.github.io/Imagesformysalespage/R.png",
+      ],
       link: "https://docs.google.com/document/d/1p49qmI7SgR9c9a3iKKDvg-5B3S861-IzUtQ-Ip1JAa8/edit?usp=sharing",
       imgClass: "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
     },
@@ -83,8 +25,8 @@ export const navItems = [
       id: 2,
       title: "Skool Sales Page - Malky Malk",
       des: "Sales page optimization through the use of copywriting and design techniques for improved conversions.",
-      img: "/Malk.png",
-      iconLists: ["/canva.png"],
+      img: "https://maush963.github.io/Imagesformysalespage/Malk.png",
+      iconLists: ["https://maush963.github.io/Imagesformysalespage/canva.png"],
       link: "https://malkymalk.my.canva.site/",
       imgClass: "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
     },
@@ -92,8 +34,8 @@ export const navItems = [
       id: 3,
       title: "VSL Script - Levisthenics",
       des: "Analysis of competitors' VSLs, followed by VSL script creation using persuasive techniques for optimized sales.",
-      img: "/VSLScript.png",
-      iconLists: ["/Miro.png"],
+      img: "https://maush963.github.io/Imagesformysalespage/VSLScript.png",
+      iconLists: ["https://maush963.github.io/Imagesformysalespage/miro.png"],
       link: "https://miro.com/app/board/uXjVK2VRn9I=/?share_link_id=296426257764",
       imgClass: "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
     },
@@ -101,8 +43,13 @@ export const navItems = [
       id: 4,
       title: "Charleads",
       des: "Analytics site for international-level CRM Leadsales displaying technical skills and data-driven decision-making.",
-      img: "/Charleads.jpeg",
-      iconLists: ["/EJS.png", "/tail.svg", "/sql.svg", "/Php.png"],
+      img: "https://maush963.github.io/Imagesformysalespage/Charleads.jpeg",
+      iconLists: [
+        "https://maush963.github.io/Imagesformysalespage/EJS.png",
+        "https://maush963.github.io/Imagesformysalespage/tail.svg",
+        "https://maush963.github.io/Imagesformysalespage/sql.svg",
+        "https://maush963.github.io/Imagesformysalespage/Php.png"
+      ],
       link: "https://github.com/A01705840/CCC_LeadSales",
       imgClass: "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
     },
@@ -111,111 +58,41 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Mauricio's dedication and commitment to achieving results are unmatched. His enthusiasm and strong communication made a real difference. If you want to increase your conversions and sales, Mauricio is the one to work with.",
+      name: "Eddie Montiel",
+      title: "CEO of Azcenzio Marketing",
+      img: 'https://maush963.github.io/Imagesformysalespage/Rex.png', 
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Collaborating with Mauricio on our project was a great experience. His creative solutions turned potential roadblocks into opportunities, and his feedback was always insightful and actionable, backed with clear justifications.",
+      name: "Sebastian Ugalde",
+      title: "Founder of UgaPhoto",
+      img: 'https://maush963.github.io/Imagesformysalespage/Ug.png', 
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Mauricio has been an incredibly rewarding experience. His persistence, loyalty, and dedication to every project are truly impressive. Mauricio consistently demonstrates exceptional commitment and trustworthiness, making him a standout leader. If you need someone who will go above and beyond to support and elevate your goals, he is the perfect choice.",
+      name: "Diego Quezada",
+      title: "President of the Citizenship Secretariat at FETEC",
+      img: 'https://maush963.github.io/Imagesformysalespage/Quezada.jpeg', 
     },
   ];
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
-  
-  export const workExperience = [
-    {
-      id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    },
-    {
-      id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
-    },
-  ];
-  
+    
   export const socialMedia = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/Maush963",
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/email.svg",
+      link: "mailto:maush.solutions@gmail.com",
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/mauricio-salas-hern%C3%A1ndez-592441254/",
     },
   ];
