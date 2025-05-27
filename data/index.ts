@@ -66,23 +66,16 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "La dedicación y compromiso de Mauricio para lograr resultados no tienen comparación. Su entusiasmo y gran capacidad de comunicación marcaron una verdadera diferencia. Si buscas aumentar tus conversiones y ventas, Mauricio es la persona indicada.",
+      "El equipo de Sorelli demostró una gran dedicación y enfoque estratégico para lograr resultados. Su entusiasmo y gran capacidad de comunicación marcaron una verdadera diferencia.",
     name: "Eddie Montiel",
-    title: "CEO of Azcenzio Marketing",
+    title: "CEO de Azcenzio Marketing",
     img: "https://maush963.github.io/Imagesformysalespage/Rex.png",
   },
   {
     quote:
-      "Colaborar con Mauricio en nuestro proyecto fue una excelente experiencia. Sus soluciones creativas convirtieron posibles obstáculos en oportunidades, y su retroalimentación siempre fue clara, útil y bien fundamentada.",
-    name: "Sebastian Ugalde",
-    title: "Founder of UgaPhoto",
-    img: "https://maush963.github.io/Imagesformysalespage/Ug.png",
-  },
-  {
-    quote:
-      "Trabajar con Mauricio ha sido una experiencia sumamente enriquecedora. Su constancia, lealtad y entrega en cada proyecto son realmente admirables. Siempre demuestra un compromiso excepcional y una gran confiabilidad, lo que lo convierte en un líder destacado. Si necesitas a alguien que dé más del 100% para impulsar tus objetivos, él es la opción ideal.",
+      "El compromiso de que tienen en Sorelli con cada proyecto es evidente. Son un equipo confiable, constante y con una gran capacidad para adaptarse a lo que uno realmente necesita.",
     name: "Diego Quezada",
-    title: "President of the Citizenship Secretariat at FETEC",
+    title: "Presidente de la Secretaría de Ciudadanía en FETEC",
     img: "https://maush963.github.io/Imagesformysalespage/Quezada.jpeg",
   },
 ];
