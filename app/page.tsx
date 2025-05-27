@@ -10,7 +10,8 @@ import Problem from "@/components/Problem";
 import { StarsBackground } from "@/components/ui/stars-background";
 import PerfectSolution from "@/components/PerfectSolution";
 import Clients from "@/components/Clients";
-
+import AboutUs from "@/components/AboutUs";
+import FixedLogo from "@/components/ui/FixedLogo";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
@@ -24,19 +25,21 @@ export default function Home() {
   }
 
   return (
-   <main className="relative bg-slate flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-    <div className="max-w-7xl w-full">
-      <StarsBackground className="absolute inset-0 z-0" />
+    <main className="relative bg-slate flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+      <div className="max-w-7xl w-full">
+        <StarsBackground className="absolute inset-0 z-0" />
+        <FixedLogo />
         <div className="relative z-10">
           <FloatingNav navItems={navItems} />
           <Hero />
+          <Problem />
           <PerfectSolution />
           <RecentProjects />
           <Clients />
-          <Problem />
+          <AboutUs />
           <Footer />
         </div>
-    </div>
-   </main>
+      </div>
+    </main>
   );
 }

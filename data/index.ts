@@ -1,98 +1,106 @@
 import { link } from "fs";
 
 export const navItems = [
-    { name: "Process", link: "#process" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
-  ];
-  
-  export const projects = [
-    {
-      id: 1,
-      title: "Calisthenics Businesses Funnel Analysis",
-      des: "In-depth analysis of top-performing calisthenics Skool communities, focusing on strategies used across all stages.",
-      img: "https://maush963.github.io/Imagesformysalespage/MicroBusinessAnalysis.png",
-      iconLists: [
-        "https://maush963.github.io/Imagesformysalespage/docs.svg",
-        "https://maush963.github.io/Imagesformysalespage/sql.svg",
-        "https://maush963.github.io/Imagesformysalespage/R.png",
-      ],
-      link: "https://docs.google.com/document/d/1p49qmI7SgR9c9a3iKKDvg-5B3S861-IzUtQ-Ip1JAa8/edit?usp=sharing",
-      imgClass: "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
-    },
-    {
-      id: 2,
-      title: "Skool Sales Page - Malky Malk",
-      des: "Sales page optimization through the use of copywriting and design techniques for improved conversions.",
-      img: "https://maush963.github.io/Imagesformysalespage/Malk.png",
-      iconLists: ["https://maush963.github.io/Imagesformysalespage/canva.png"],
-      link: "https://malkymalk.my.canva.site/",
-      imgClass: "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
-    },
-    {
-      id: 3,
-      title: "VSL Script - Levisthenics",
-      des: "Analysis of competitors' VSLs, followed by VSL script creation using persuasive techniques for optimized sales.",
-      img: "https://maush963.github.io/Imagesformysalespage/VSLScript.png",
-      iconLists: ["https://maush963.github.io/Imagesformysalespage/miro.png"],
-      link: "https://miro.com/app/board/uXjVK2VRn9I=/?share_link_id=296426257764",
-      imgClass: "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
-    },
-    {
-      id: 4,
-      title: "Charleads",
-      des: "Analytics site for international-level CRM Leadsales displaying technical skills and data-driven decision-making.",
-      img: "https://maush963.github.io/Imagesformysalespage/Charleads.jpeg",
-      iconLists: [
-        "https://maush963.github.io/Imagesformysalespage/EJS.png",
-        "https://maush963.github.io/Imagesformysalespage/tail.svg",
-        "https://maush963.github.io/Imagesformysalespage/sql.svg",
-        "https://maush963.github.io/Imagesformysalespage/Php.png"
-      ],
-      link: "https://github.com/A01705840/CCC_LeadSales",
-      imgClass: "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
-    },
-  ];
-  
-  export const testimonials = [
-    {
-      quote:
-        "Mauricio's dedication and commitment to achieving results are unmatched. His enthusiasm and strong communication made a real difference. If you want to increase your conversions and sales, Mauricio is the one to work with.",
-      name: "Eddie Montiel",
-      title: "CEO of Azcenzio Marketing",
-      img: 'https://maush963.github.io/Imagesformysalespage/Rex.png', 
-    },
-    {
-      quote:
-        "Collaborating with Mauricio on our project was a great experience. His creative solutions turned potential roadblocks into opportunities, and his feedback was always insightful and actionable, backed with clear justifications.",
-      name: "Sebastian Ugalde",
-      title: "Founder of UgaPhoto",
-      img: 'https://maush963.github.io/Imagesformysalespage/Ug.png', 
-    },
-    {
-      quote:
-        "Working with Mauricio has been an incredibly rewarding experience. His persistence, loyalty, and dedication to every project are truly impressive. Mauricio consistently demonstrates exceptional commitment and trustworthiness, making him a standout leader. If you need someone who will go above and beyond to support and elevate your goals, he is the perfect choice.",
-      name: "Diego Quezada",
-      title: "President of the Citizenship Secretariat at FETEC",
-      img: 'https://maush963.github.io/Imagesformysalespage/Quezada.jpeg', 
-    },
-  ];
-    
-  export const socialMedia = [
-    {
-      id: 1,
-      img: "/git.svg",
-      link: "https://github.com/Maush963",
-    },
-    {
-      id: 2,
-      img: "/email.svg",
-      link: "mailto:maush.solutions@gmail.com",
-    },
-    {
-      id: 3,
-      img: "/link.svg",
-      link: "https://www.linkedin.com/in/mauricio-salas-hern%C3%A1ndez-592441254/",
-    },
-  ];
+  { name: "Proceso", link: "#process" },
+  { name: "Proyectos", link: "#projects" },
+  { name: "Testimonios", link: "#testimonials" },
+  { name: "Contacto", link: "#contact" },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Charleads - Leadsales",
+    des: "Página de analítica para la empresa Leadsales, enfocada en mostrar datos clave y respaldar la toma de decisiones estratégicas.",
+    img: "https://maush963.github.io/Imagesformysalespage/Charleads.jpeg",
+    iconLists: [
+      "https://maush963.github.io/Imagesformysalespage/node.png",
+      "https://maush963.github.io/Imagesformysalespage/tail.svg",
+      "https://maush963.github.io/Imagesformysalespage/sql.svg",
+      "https://maush963.github.io/Imagesformysalespage/Php.png",
+    ],
+    link: "https://github.com/A01705840/CCC_LeadSales",
+    imgClass:
+      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
+  },
+  {
+    id: 2,
+    title: "SoffyApp - Fundación Soffy",
+    des: "Página web/app clínica para Fundación Soffy sin fines de lucro que centraliza expedientes y agiliza flujos administrativos con enfoque en seguridad y eficiencia.",
+    img: "https://maush963.github.io/Imagesformysalespage/Soffyapp.png",
+    iconLists: [
+      "https://maush963.github.io/Imagesformysalespage/node.png",
+      "https://maush963.github.io/Imagesformysalespage/kotlin-1-logo.png",
+      "https://maush963.github.io/Imagesformysalespage/bulma.png",
+      "https://maush963.github.io/Imagesformysalespage/sql.svg",
+    ],
+    link: "https://github.com/netogu1llen/ITNet/",
+    imgClass:
+      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
+  },
+  {
+    id: 3,
+    title: "Página de ventas - Malky Malk",
+    des: "Rediseño de página de ventas para servidor de Skool mediante técnicas de copywriting y diseño estratégico para aumentar las conversiones.",
+    img: "https://maush963.github.io/Imagesformysalespage/Malk.png",
+    iconLists: ["https://maush963.github.io/Imagesformysalespage/canva.png"],
+    link: "https://malkymalk.my.canva.site/",
+    imgClass:
+      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
+  },
+  {
+    id: 4,
+    title: "Sistema de tickets - King Global Cargo",
+    des: "Un sistema de tickets para la empresa KGC, que permite a los empleados gestionar y dar seguimiento a tareas de manera eficiente.",
+    img: "https://maush963.github.io/Imagesformysalespage/KGC.png",
+    iconLists: [
+      "https://maush963.github.io/Imagesformysalespage/nextjs.png",
+      "https://maush963.github.io/Imagesformysalespage/tail.svg",
+    ],
+    link: "https://github.com/IramKGC/TicketMasterKGC",
+    imgClass:
+      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "La dedicación y compromiso de Mauricio para lograr resultados no tienen comparación. Su entusiasmo y gran capacidad de comunicación marcaron una verdadera diferencia. Si buscas aumentar tus conversiones y ventas, Mauricio es la persona indicada.",
+    name: "Eddie Montiel",
+    title: "CEO of Azcenzio Marketing",
+    img: "https://maush963.github.io/Imagesformysalespage/Rex.png",
+  },
+  {
+    quote:
+      "Colaborar con Mauricio en nuestro proyecto fue una excelente experiencia. Sus soluciones creativas convirtieron posibles obstáculos en oportunidades, y su retroalimentación siempre fue clara, útil y bien fundamentada.",
+    name: "Sebastian Ugalde",
+    title: "Founder of UgaPhoto",
+    img: "https://maush963.github.io/Imagesformysalespage/Ug.png",
+  },
+  {
+    quote:
+      "Trabajar con Mauricio ha sido una experiencia sumamente enriquecedora. Su constancia, lealtad y entrega en cada proyecto son realmente admirables. Siempre demuestra un compromiso excepcional y una gran confiabilidad, lo que lo convierte en un líder destacado. Si necesitas a alguien que dé más del 100% para impulsar tus objetivos, él es la opción ideal.",
+    name: "Diego Quezada",
+    title: "President of the Citizenship Secretariat at FETEC",
+    img: "https://maush963.github.io/Imagesformysalespage/Quezada.jpeg",
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+    link: "https://github.com/Maush963",
+  },
+  {
+    id: 2,
+    img: "/email.svg",
+    link: "mailto:salasm830@gmail.com",
+  },
+  {
+    id: 3,
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/mauricio-salas-hern%C3%A1ndez-592441254/",
+  },
+];
