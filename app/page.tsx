@@ -12,6 +12,7 @@ import PerfectSolution from "@/components/PerfectSolution";
 import Clients from "@/components/Clients";
 import AboutUs from "@/components/AboutUs";
 import FixedLogo from "@/components/ui/FixedLogo";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <main className="relative bg-slate flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+      <Analytics />
       <div className="max-w-7xl w-full">
         <StarsBackground className="absolute inset-0 z-0" />
         <FixedLogo />
