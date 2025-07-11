@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Negocios que quieren destacar
+            Emprendedores, negocios o freelancers
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
@@ -33,7 +33,7 @@ const Hero = () => {
             Creamos páginas claras, rápidas y confiables para que tu marca se
             vea tan bien como lo que ofrece.
           </p>
-          <a href="https://calendly.com/maush-solutions/15min-onboarding-call">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScnJLfXlIQmRI2HsmyXDN6LBxAQyPXnuz15iYEEUe2TdoENHg/viewform?usp=header">
             <MagicButton
               title="Potencia tu imagen"
               icon={<FaLocationArrow />}

@@ -1,7 +1,6 @@
 import React from "react";
 import { projects } from "../data";
 import { PinContainer } from "./ui/3d-pin";
-import { div } from "three/webgpu";
 import { FaLocationArrow } from "react-icons/fa";
 
 const RecentProjects = () => {
@@ -17,7 +16,7 @@ const RecentProjects = () => {
             key={id}
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] mb-4"
           >
-            <PinContainer title={link} href={link}>
+            <PinContainer title={title}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[75vw] overflow-hidden sm:h-[40vh] h-[22vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#030f0a]">
                   <img
@@ -62,14 +61,12 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    {title === "Página de ventas - Malky Malk"
-                      ? "Visitar Página"
-                      : "Ver Repositorio"}
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#3AFFB0" />
-                </div>
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center"
+                ></a>
               </div>
             </PinContainer>
           </div>

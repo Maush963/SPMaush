@@ -83,17 +83,7 @@ export const testimonials = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
-    link: "https://github.com/Maush963",
-  },
-  {
-    id: 2,
     img: "/email.svg",
-    link: "mailto:salasm830@gmail.com",
-  },
-  {
-    id: 3,
-    img: "/link.svg",
-    link: "https://www.linkedin.com/in/mauricio-salas-hern%C3%A1ndez-592441254/",
+    link: "mailto:depensamientosecos@gmailF.com",
   },
 ];

@@ -19,19 +19,6 @@ const AboutUs = () => {
             soluciones que conectan, venden y perduran.
           </p>
         </div>
-        {/* En mobile: columna, en desktop: fila con espacio entre imágenes */}
-        <div className="flex flex-col md:flex-row md:w-1/4 justify-center items-center w-full md:ml-32">
-          <img
-            src="https://maush963.github.io/Imagesformysalespage/Uger.jpeg"
-            alt="Mauricio Salas"
-            className="w-2/3 md:w-4/5 aspect-[3/4] object-cover shadow-md shadow-purple rounded-t-lg rounded-b-none md:rounded-l-lg md:rounded-r-none md:rounded-t-lg md:rounded-b-lg md:mr-3"
-          />
-          <img
-            src="https://maush963.github.io/Imagesformysalespage/Maushv2.jpeg"
-            alt="Mauricio Salas"
-            className="w-2/3 md:w-4/5 aspect-[3/4] object-cover shadow-md shadow-purple rounded-b-lg rounded-t-none md:rounded-r-lg md:rounded-l-none md:rounded-t-lg md:rounded-b-lg"
-          />
-        </div>
       </div>
     </div>
   );

@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sorelli Agency",
-  description: "A software developer's aproach to a copywriting Growth Partner",
+  description: "A website developed by Sorelli Agency",
   icons: {
-    icon: "/logo.png",
+    icon: "/s.png",
   },
 };
 
@@ -19,13 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
-          attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
+          enableSystem={false}
         >
           {children}
         </ThemeProvider>

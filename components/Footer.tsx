@@ -18,7 +18,7 @@ const Footer = () => {
             Si sientes que lo que hacés vale la pena, pero tu página no lo
             demuestra, esto es para ti.
           </p>
-          <a href="https://calendly.com/maush-solutions/15min-onboarding-call">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScnJLfXlIQmRI2HsmyXDN6LBxAQyPXnuz15iYEEUe2TdoENHg/viewform?usp=header">
             <MagicButton
               title="Potencia tu imagen"
               icon={<FaLocationArrow />}
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-column justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Maush
+          Copyright © 2024 Sorelli
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
