@@ -33,7 +33,7 @@ const Hero = () => {
             Creamos páginas claras, rápidas y confiables para que tu marca se
             vea tan bien como lo que ofrece.
           </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScnJLfXlIQmRI2HsmyXDN6LBxAQyPXnuz15iYEEUe2TdoENHg/viewform?usp=header">
+          <a href="/formulario">
             <MagicButton
               title="Potencia tu imagen"
               icon={<FaLocationArrow />}

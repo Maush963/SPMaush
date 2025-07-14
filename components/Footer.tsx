@@ -18,7 +18,7 @@ const Footer = () => {
             Si sientes que lo que hacés vale la pena, pero tu página no lo
             demuestra, esto es para ti.
           </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScnJLfXlIQmRI2HsmyXDN6LBxAQyPXnuz15iYEEUe2TdoENHg/viewform?usp=header">
+          <a href="/forms">
             <MagicButton
               title="Potencia tu imagen"
               icon={<FaLocationArrow />}
