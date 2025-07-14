@@ -3,53 +3,20 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   try {
     console.log("🚀 API iniciando...");
-
-    // ✅ VERIFICAR VARIABLES DE ENTORNO
-    const APPS_SCRIPT_URL = process.env.GOOGLE_APPS_SCRIPT_URL;
-
-    console.log("🔍 DEBUGGING VARIABLES DE ENTORNO:");
-    console.log("- GOOGLE_APPS_SCRIPT_URL existe:", !!APPS_SCRIPT_URL);
-    console.log(
-      "- GOOGLE_APPS_SCRIPT_URL longitud:",
-      APPS_SCRIPT_URL?.length || 0
-    );
-    console.log(
-      "- GOOGLE_APPS_SCRIPT_URL primeros 50 chars:",
-      APPS_SCRIPT_URL?.substring(0, 50) || "NO ENCONTRADA"
-    );
-
-    // Mostrar TODAS las variables de entorno (solo las que empiecen con GOOGLE_)
-    console.log("🔍 Variables que empiezan con GOOGLE_:");
-    Object.keys(process.env)
-      .filter((key) => key.startsWith("GOOGLE_"))
-      .forEach((key) => {
-        console.log(`- ${key}: ${process.env[key]?.substring(0, 30)}...`);
-      });
-
     const body = await request.json();
     console.log("📥 Datos recibidos:", body);
 
-    if (!APPS_SCRIPT_URL) {
-      console.error("❌ GOOGLE_APPS_SCRIPT_URL NO ESTÁ CONFIGURADA");
+    const APPS_SCRIPT_URL = process.env.GOOGLE_APPS_SCRIPT_URL;
+    console.log(
+      "🔗 Apps Script URL:",
+      APPS_SCRIPT_URL ? "Configurada" : "❌ NO CONFIGURADA"
+    );
 
-      // Devolver información de debugging
-      return NextResponse.json(
-        {
-          success: false,
-          error: "Variable de entorno no configurada",
-          debug: {
-            hasVariable: false,
-            allEnvKeys: Object.keys(process.env).filter((k) =>
-              k.includes("GOOGLE")
-            ),
-            environment: process.env.NODE_ENV,
-          },
-        },
-        { status: 500 }
-      );
+    if (!APPS_SCRIPT_URL) {
+      throw new Error("Google Apps Script URL no configurada");
     }
 
-    console.log("✅ Variable encontrada, enviando a Apps Script...");
+    console.log("📤 Enviando a Apps Script...");
 
     const response = await fetch(APPS_SCRIPT_URL, {
       method: "POST",
@@ -59,19 +26,32 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify(body),
     });
 
-    console.log("📡 Respuesta Apps Script:", response.status);
+    console.log(
+      "📡 Respuesta Apps Script:",
+      response.status,
+      response.statusText
+    );
 
+    // ✅ CLAVE: Leer como texto primero para ver qué devuelve
     const responseText = await response.text();
+    console.log("📄 Contenido completo devuelto por Apps Script:");
+    console.log(responseText.substring(0, 500)); // Primeros 500 caracteres
 
-    if (!response.ok) {
-      throw new Error(`Error HTTP: ${response.status} - ${responseText}`);
+    // Verificar si es HTML
+    if (responseText.includes("<!DOCTYPE") || responseText.includes("<html>")) {
+      console.error("❌ Apps Script devolvió HTML en lugar de JSON");
+      console.error("🔍 Esto indica un problema de configuración o permisos");
+      throw new Error("Apps Script devolvió HTML - verificar configuración");
     }
 
+    // Intentar parsear JSON
     let result;
     try {
       result = JSON.parse(responseText);
+      console.log("✅ JSON parseado correctamente:", result);
     } catch (parseError) {
-      throw new Error("Apps Script no devolvió JSON válido");
+      console.error("❌ Error parseando JSON:", parseError);
+      throw new Error("Respuesta no es JSON válido");
     }
 
     if (result.success) {
@@ -91,10 +71,6 @@ export async function POST(request: NextRequest) {
         success: false,
         error: "Error al procesar el formulario",
         details: error instanceof Error ? error.message : "Error desconocido",
-        debug: {
-          hasGoogleAppsScriptUrl: !!process.env.GOOGLE_APPS_SCRIPT_URL,
-          environment: process.env.NODE_ENV,
-        },
       },
       { status: 500 }
     );
