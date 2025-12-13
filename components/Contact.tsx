@@ -111,7 +111,7 @@ const Contact = () => {
             className="mt-20 pt-12 border-t border-black/10 flex flex-col md:flex-row justify-between items-center gap-6"
           >
             <p className="text-sm text-gray-500">
-              © 2025 Sor elli Agency. Todos los derechos reservados.
+              © 2025 Sorelli Agency. Todos los derechos reservados.
             </p>
             <div className="flex gap-8">
               <a
