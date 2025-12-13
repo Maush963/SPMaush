@@ -34,7 +34,7 @@ export const projects = [
       "https://maush963.github.io/Imagesformysalespage/bulma.png",
       "https://maush963.github.io/Imagesformysalespage/sql.svg",
     ],
-    link: "https://github.com/netogu1llen/ITNet/",
+    link: "https://github.com/netogu1llen/SorelliAgency/",
     imgClass:
       "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
   },

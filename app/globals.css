@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,100 +7,137 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-
-    --radius: 0.5rem;
+    --foreground: 0 0% 0%;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
   }
-}
-.circular-image-container {
-  width: 50px; /* Ajusta el tamaño según tus necesidades */
-  height: 50px; /* Ajusta el tamaño según tus necesidades */
-  border-radius: 50%; /* Hace que el contenedor sea circular */
-  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.circular-image {
-  width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
-  height: 100%; /* Ajusta el tamaño de la imagen al contenedor */
-  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
-}
-
-@layer base {
   * {
-    @apply border-border !scroll-smooth;
+    @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-white font-inter antialiased;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
   }
-  button {
-    @apply active:outline-none;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inter", sans-serif;
   }
 }
 
 @layer utilities {
-  .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+  /* Typography Styles */
+  .heading-hero {
+    @apply font-black text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-none tracking-tight uppercase;
   }
 
-  .black-gradient {
-    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  .heading-section {
+    @apply font-black text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight uppercase;
   }
+
+  .heading-card {
+    @apply font-bold text-xl md:text-2xl leading-tight tracking-tight uppercase;
+  }
+
+  .text-elegant {
+    font-family: "Playfair Display", serif;
+    @apply italic;
+  }
+
+  /* Layout Utilities */
+  .section-padding {
+    @apply py-20 md:py-32 lg:py-40;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-16;
+  }
+
+  /* Card Styles */
+  .card-minimal {
+    @apply bg-white text-black transition-all duration-500 hover:scale-[1.02];
+  }
+
+  .card-dark {
+    @apply bg-black text-white border border-white/10 transition-all duration-500 hover:border-white/30;
+  }
+
+  /* Image Effects */
+  .img-grayscale {
+    @apply grayscale hover:grayscale-0 transition-all duration-700;
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  /* Grid Utilities */
+  .grid-portfolio {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6;
+  }
+
+  /* Border Utilities */
+  .border-minimal {
+    @apply border border-white/20;
+  }
+
+  /* Hover Effects */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+  }
+
+  /* Text Accents */
+  .text-gradient {
+    @apply bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+/* Selection */
+::selection {
+  background: #fff;
+  color: #000;
 }
