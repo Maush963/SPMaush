@@ -40,7 +40,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Página de ventas - Malky Malk",
+    title: "Sales page - Malky Malk ",
     des: "Rediseño de página de ventas para servidor de Skool mediante técnicas de copywriting y diseño estratégico para aumentar las conversiones.",
     img: "https://maush963.github.io/Imagesformysalespage/Malk.png",
     iconLists: ["https://maush963.github.io/Imagesformysalespage/canva.png"],
@@ -50,7 +50,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Sistema de tickets - King Global Cargo",
+    title: "Sistema de tickets - KGC ",
     des: "Un sistema de tickets para la empresa KGC, que permite a los empleados gestionar y dar seguimiento a tareas de manera eficiente.",
     img: "https://maush963.github.io/Imagesformysalespage/KGC.png",
     iconLists: [

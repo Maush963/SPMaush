@@ -113,24 +113,28 @@ const ServicesCircle = () => {
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1.2, delay: 1.5 }}
+                transition={{ duration: 1.0, delay: 1.5 }}
               />
-              <motion.foreignObject
-                x="20"
-                y="50"
-                width="220"
-                height="100"
+              <motion.text
+                x="90"
+                y="95"
+                textAnchor="start"
+                fill="white"
+                fontSize="16"
+                fontStyle="italic"
                 initial={{ opacity: 0, y: -10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 1.8 }}
+                className="font-serif"
               >
-                <div className="text-right text-sm md:text-base text-white/70 italic pr-2 leading-relaxed font-handwriting">
+                <tspan x="90" dy="0">
                   Clarity, Persuasion,
-                  <br />
+                </tspan>
+                <tspan x="90" dy="20">
                   and Messaging
-                </div>
-              </motion.foreignObject>
+                </tspan>
+              </motion.text>
 
               {/* Top Right Arrow (Design) */}
               <motion.path
@@ -142,24 +146,29 @@ const ServicesCircle = () => {
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1.2, delay: 1.8 }}
+                transition={{ duration: 1.0, delay: 1.7 }}
               />
-              <motion.foreignObject
-                x="760"
-                y="50"
-                width="220"
-                height="100"
+              <motion.text
+                x="720"
+                y="95"
+                textAnchor="start"
+                fill="white"
+                fontSize="16"
+                fontStyle="italic"
+                fontFamily="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif"
                 initial={{ opacity: 0, y: -10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 2.1 }}
+                transition={{ duration: 0.5, delay: 2.0 }}
+                className="font-sans"
               >
-                <div className="text-left text-sm md:text-base text-white/70 italic pl-2 leading-relaxed font-handwriting">
+                <tspan x="720" dy="0">
                   Aesthetics, User Experience
-                  <br />
+                </tspan>
+                <tspan x="720" dy="20">
                   (UX), and Visual Hierarchy
-                </div>
-              </motion.foreignObject>
+                </tspan>
+              </motion.text>
 
               {/* Bottom Arrow (Development) */}
               <motion.path
@@ -171,24 +180,29 @@ const ServicesCircle = () => {
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1.2, delay: 2.1 }}
+                transition={{ duration: 1.0, delay: 1.9 }}
               />
-              <motion.foreignObject
-                x="650"
-                y="700"
-                width="250"
-                height="100"
+              <motion.text
+                x="690"
+                y="765"
+                textAnchor="start"
+                fill="white"
+                fontSize="16"
+                fontStyle="italic"
+                fontFamily="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 2.4 }}
+                transition={{ duration: 0.5, delay: 2.2 }}
+                className="font-sans"
               >
-                <div className="text-left text-sm md:text-base text-white/70 italic pl-2 leading-relaxed font-handwriting">
+                <tspan x="690" dy="0">
                   Performance, Speed,
-                  <br />
+                </tspan>
+                <tspan x="690" dy="20">
                   and Functionality
-                </div>
-              </motion.foreignObject>
+                </tspan>
+              </motion.text>
             </g>
 
             {/* TEXT LABELS (Rendered last to be on top of everything) */}
@@ -213,7 +227,7 @@ const ServicesCircle = () => {
 
               {/* Design Label */}
               <motion.text
-                x="630"
+                x="650"
                 y="320"
                 textAnchor="middle"
                 dominantBaseline="middle"
