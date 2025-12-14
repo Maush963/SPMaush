@@ -63,6 +63,7 @@ export const ProjectCard = ({
                 text={project.title.toUpperCase()}
                 delay={0.1}
                 isVisible={isVisible}
+                scrollDirection={scrollDirection}
               />
             </h3>
           </div>
