@@ -15,7 +15,7 @@ const ServicesCircle = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12 md:mb-20"
+          className="text-center mb-0 md:mb-0"
         >
           <h2 className="heading-section mb-4">WE BUILD WEBSITES</h2>
           <p className="text-elegant text-2xl md:text-4xl text-white/60">
@@ -172,7 +172,7 @@ const ServicesCircle = () => {
 
               {/* Bottom Arrow (Development) */}
               <motion.path
-                d="M 750 750 Q 650 680 560 580"
+                d="M 680 680 Q 600 650 560 580"
                 fill="none"
                 stroke="white"
                 strokeWidth="1.5"
@@ -180,11 +180,11 @@ const ServicesCircle = () => {
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1.0, delay: 1.9 }}
+                transition={{ duration: 1.0, delay: 1.5 }}
               />
               <motion.text
-                x="690"
-                y="765"
+                x="620"
+                y="695"
                 textAnchor="start"
                 fill="white"
                 fontSize="16"
@@ -193,13 +193,13 @@ const ServicesCircle = () => {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 2.2 }}
+                transition={{ duration: 0.5, delay: 1.5 }}
                 className="font-sans"
               >
-                <tspan x="690" dy="0">
+                <tspan x="620" dy="0">
                   Performance, Speed,
                 </tspan>
-                <tspan x="690" dy="20">
+                <tspan x="620" dy="20">
                   and Functionality
                 </tspan>
               </motion.text>

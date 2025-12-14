@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import NewHero from "@/components/NewHero";
 import Highlights from "@/components/Highlights";
 import HowItWorks from "@/components/HowItWorks";
@@ -11,6 +12,17 @@ import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
+  const { scrollY } = useScroll();
+  const [hidden, setHidden] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   useEffect(() => {
     setIsClient(true);
@@ -25,8 +37,16 @@ export default function Home() {
       <Analytics />
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
-        <div className="container-custom py-6 flex justify-between items-center">
+      <motion.nav
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10"
+      >
+        <div className="container-custom py-4 flex justify-between items-center">
           <div className="text-2xl font-black tracking-tight">
             SORELLI
           </div>
@@ -66,7 +86,7 @@ export default function Home() {
             </svg>
           </button>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Main Content */}
       <NewHero />
