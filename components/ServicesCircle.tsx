@@ -260,7 +260,7 @@ const ServicesCircle = () => {
                 }}
                 transition={{ delay: 2.8, duration: 2 }}
               >
-                DESIGN
+                DISEÑO
               </motion.text>
 
               {/* Development Label */}
@@ -279,7 +279,7 @@ const ServicesCircle = () => {
                 }}
                 transition={{ delay: 3.1, duration: 2 }}
               >
-                DEVELOPMENT
+                CÓDIGO
               </motion.text>
             </g>
           </svg>
@@ -410,7 +410,7 @@ const ServicesCircle = () => {
                 }}
                 transition={{ delay: 1.3, duration: 0.5 }}
               >
-                DESIGN
+                DISEÑO
               </motion.text>
 
               {/* Development Label */}
@@ -429,7 +429,7 @@ const ServicesCircle = () => {
                 }}
                 transition={{ delay: 1.6, duration: 0.5 }}
               >
-                DEVELOPMENT
+                CÓDIGO
               </motion.text>
             </g>
           </svg>
@@ -453,7 +453,7 @@ const ServicesCircle = () => {
 
             <div className="text-center">
               <h3 className="text-white font-bold text-lg mb-2 tracking-wide">
-                DESIGN
+                DIESÑO
               </h3>
               <p className="text-white/70 text-sm italic">
                 Estética, experiencia de usuario (UX) y jerarquía visual
@@ -462,7 +462,7 @@ const ServicesCircle = () => {
 
             <div className="text-center">
               <h3 className="text-white font-bold text-lg mb-2 tracking-wide">
-                DEVELOPMENT
+                CÓDIGO
               </h3>
               <p className="text-white/70 text-sm italic">
                 Rendimiento, velocidad y funcionalidad
