@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import NewHero from "@/components/NewHero";
+import TheProblem from "@/components/TheProblem";
 import Highlights from "@/components/Highlights";
 import HowItWorks from "@/components/HowItWorks";
 import ServicesCircle from "@/components/ServicesCircle";
@@ -90,9 +91,10 @@ export default function Home() {
 
       {/* Main Content */}
       <NewHero />
+      <TheProblem />
+      <ServicesCircle />
       <Highlights />
       <HowItWorks />
-      <ServicesCircle />
       <FAQ />
       <Contact />
     </main>
