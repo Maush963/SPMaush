@@ -2,29 +2,43 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import CircularMesh from "./CircularMesh";
+import InkText from "./InkText";
 
 const NewHero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
-      <div className="container-custom relative z-10">
+      {/* Wireframe Background */}
+      <CircularMesh className="z-0" />
+
+      <div className="container-custom relative z-10 w-full">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="relative z-10 flex flex-col items-center justify-center"
+          className="relative z-10 flex flex-col items-center justify-center w-full space-y-2 md:space-y-4"
         >
-          <h1 className="heading-hero text-center flex flex-col items-center leading-[0.85]">
+          <h1 className="heading-hero text-center flex flex-col items-center leading-none w-full">
             <span 
-              className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-bottom"
+              className="block text-[10vw] md:text-[8vw] leading-none tracking-tighter font-bold origin-bottom relative -mb-2 md:-mb-4 z-20"
               style={{ transform: "scaleY(1.3)" }}
             >
               DIGITAL
             </span>
-            <span className="block text-elegant text-6xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-4 md:-my-8 relative z-10 mix-blend-difference">
-              Excellence
-            </span>
+            
+            <div className="relative z-10 w-full flex justify-center py-0">
+              <div className="w-[80vw] md:w-[40vw] max-w-3xl"> 
+                <InkText 
+                  text="Excellence" 
+                  width={400} 
+                  height={100} 
+                  className="mix-blend-normal" 
+                />
+              </div>
+            </div>
+
             <span 
-              className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-top"
+              className="block text-[10vw] md:text-[8vw] leading-none tracking-tighter font-bold origin-top relative -mt-2 md:-mt-4 z-20"
               style={{ transform: "scaleY(1.3)" }}
             >
               REDEFINED
@@ -62,8 +76,7 @@ const NewHero = () => {
         </div>
       </div>
 
-      {/* Background grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000,transparent)] pointer-events-none" />
+      {/* Background grid pattern - REMOVED per user request */}
     </section>
   );
 };
