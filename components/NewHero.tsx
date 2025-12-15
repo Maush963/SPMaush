@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CircularMesh from "./CircularMesh";
-import InkText from "./InkText";
 
 const NewHero = () => {
   return (
@@ -11,34 +10,25 @@ const NewHero = () => {
       {/* Wireframe Background */}
       <CircularMesh className="z-0" />
 
-      <div className="container-custom relative z-10 w-full">
+      <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="relative z-10 flex flex-col items-center justify-center w-full space-y-2 md:space-y-4"
+          className="relative z-10 flex flex-col items-center justify-center"
         >
-          <h1 className="heading-hero text-center flex flex-col items-center leading-none w-full">
+          <h1 className="heading-hero text-center flex flex-col items-center leading-[0.85]">
             <span 
-              className="block text-[10vw] md:text-[8vw] leading-none tracking-tighter font-bold origin-bottom relative -mb-2 md:-mb-4 z-20"
+              className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-bottom"
               style={{ transform: "scaleY(1.3)" }}
             >
               DIGITAL
             </span>
-            
-            <div className="relative z-10 w-full flex justify-center py-0">
-              <div className="w-[80vw] md:w-[40vw] max-w-3xl"> 
-                <InkText 
-                  text="Excellence" 
-                  width={400} 
-                  height={100} 
-                  className="mix-blend-normal" 
-                />
-              </div>
-            </div>
-
+            <span className="block text-elegant text-6xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-4 md:-my-8 relative z-10 mix-blend-difference">
+              Excellence
+            </span>
             <span 
-              className="block text-[10vw] md:text-[8vw] leading-none tracking-tighter font-bold origin-top relative -mt-2 md:-mt-4 z-20"
+              className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-top"
               style={{ transform: "scaleY(1.3)" }}
             >
               REDEFINED
@@ -75,8 +65,6 @@ const NewHero = () => {
           (2025)
         </div>
       </div>
-
-      {/* Background grid pattern - REMOVED per user request */}
     </section>
   );
 };
