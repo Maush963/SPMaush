@@ -15,7 +15,7 @@ const ServicesCircle = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-4 md:mb-0"
+          className="text-center mb-4 md:mb-0 w-full flex flex-col items-center"
         >
           <h2 className="heading-section mb-4 text-3xl md:text-5xl">
             construimos páginas
@@ -382,7 +382,7 @@ const ServicesCircle = () => {
                 textAnchor="middle"
                 dominantBaseline="middle"
                 fill="white"
-                fontSize="18"
+                fontSize="24"
                 fontWeight="bold"
                 letterSpacing="1"
                 variants={{
@@ -401,7 +401,7 @@ const ServicesCircle = () => {
                 textAnchor="middle"
                 dominantBaseline="middle"
                 fill="white"
-                fontSize="22"
+                fontSize="24"
                 fontWeight="bold"
                 letterSpacing="1"
                 variants={{
@@ -420,7 +420,7 @@ const ServicesCircle = () => {
                 textAnchor="middle"
                 dominantBaseline="middle"
                 fill="white"
-                fontSize="16"
+                fontSize="24"
                 fontWeight="bold"
                 letterSpacing="1"
                 variants={{
@@ -453,7 +453,7 @@ const ServicesCircle = () => {
 
             <div className="text-center">
               <h3 className="text-white font-bold text-lg mb-2 tracking-wide">
-                DIESÑO
+                DISEÑO
               </h3>
               <p className="text-white/70 text-sm italic">
                 Estética, experiencia de usuario (UX) y jerarquía visual
