@@ -9,6 +9,7 @@ import HowItWorks from "@/components/HowItWorks";
 import ServicesCircle from "@/components/ServicesCircle";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
+import AboutUs from "@/components/AboutUs";
 import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
@@ -61,6 +62,9 @@ export default function Home() {
             <a href="#process" className="hover:opacity-60 transition-opacity">
               PROCESS
             </a>
+            <a href="#about" className="hover:opacity-60 transition-opacity">
+              ABOUT
+            </a>
             <a href="#services" className="hover:opacity-60 transition-opacity">
               SERVICES
             </a>
@@ -95,6 +99,7 @@ export default function Home() {
       <ServicesCircle />
       <Highlights />
       <HowItWorks />
+      <AboutUs />
       <FAQ />
       <Contact />
     </main>
