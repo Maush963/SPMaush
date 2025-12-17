@@ -97,7 +97,7 @@ const HowItWorks = () => {
   return (
     <section
       ref={containerRef}
-      className="section-padding bg-black text-white relative"
+      className="section-padding bg-black text-white relative scroll-anchor"
       id="process"
     >
       <div className="container-custom relative">

@@ -8,6 +8,7 @@ interface AnimatedTextProps {
   className?: string;
   isVisible?: boolean;
   scrollDirection?: "up" | "down";
+  viewportAmount?: number;
 }
 
 /**
@@ -19,6 +20,7 @@ export const AnimatedText = ({
   className = "",
   isVisible = true,
   scrollDirection = "down",
+  viewportAmount = 0.8,
 }: AnimatedTextProps) => {
   const letters = text.split("");
 
@@ -58,7 +60,7 @@ export const AnimatedText = ({
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.8 }}
+      viewport={{ once: false, amount: viewportAmount }}
       className={className}
     >
       {letters.map((letter, index) => (

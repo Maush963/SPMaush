@@ -16,7 +16,8 @@ const AboutUs = () => {
     {
       name: "Mauricio Salas",
       role: "Ingeniero de Software",
-      description: "Arquitecturas escalables, rendimiento y calidad.",
+      description:
+        "Construcción con intención, medición constante y ajustes basados en datos.",
       image: "https://maush963.github.io/Imagesformysalespage/Maushh.jpeg",
     },
     {
@@ -30,7 +31,7 @@ const AboutUs = () => {
   return (
     <section
       ref={containerRef}
-      className="section-padding bg-black text-white relative overflow-hidden"
+      className="section-padding bg-black text-white relative overflow-hidden scroll-anchor"
       id="about"
     >
       {/* Línea decorativa diagonal eliminada para limpiar el fondo */}
@@ -107,9 +108,8 @@ const AboutUs = () => {
             <div className="h-px w-24 bg-white/10 mx-auto mb-6" />
             <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-center">
               En Sorelli, con bases sólidas en diseño y software, el trabajo se
-              enfoca en una estrategia clara: comunicar mejor para convertir.
-              Cada proyecto equilibra estética, tecnología y resultados
-              medibles.
+              enfoca en una estrategia clara: comunicar para convertir. Cada
+              proyecto equilibra estética, tecnología y resultados medibles.
             </p>
           </motion.div>
         </div>

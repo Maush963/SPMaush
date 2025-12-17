@@ -17,7 +17,7 @@ export const projects = [
       "https://maush963.github.io/Imagesformysalespage/nextjs.png",
       "https://maush963.github.io/Imagesformysalespage/tail.svg",
     ],
-    link: "https://arquiplanner.com", // Placeholder link, update if known
+    link: "https://go.arquiplanner.com/",
     imgClass:
       "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
   },
@@ -29,9 +29,8 @@ export const projects = [
     iconLists: [
       "https://maush963.github.io/Imagesformysalespage/React.png",
       "https://maush963.github.io/Imagesformysalespage/tail.svg",
-
     ],
-    link: "https://somefipp.com", // Placeholder link, update if known
+    link: "https://plataformasomefipp.com/",
     imgClass:
       "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
   },
@@ -46,7 +45,7 @@ export const projects = [
       "https://maush963.github.io/Imagesformysalespage/sql.svg",
       "https://maush963.github.io/Imagesformysalespage/Php.png",
     ],
-    link: "https://github.com/A01705840/CCC_LeadSales",
+    link: "",
     imgClass:
       "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
   },

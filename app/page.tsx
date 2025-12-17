@@ -1,7 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useMotionValueEvent,
+  AnimatePresence,
+} from "framer-motion";
 import NewHero from "@/components/NewHero";
 import TheProblem from "@/components/TheProblem";
 import Highlights from "@/components/Highlights";
@@ -17,6 +22,21 @@ export default function Home() {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollToIdWithOffset = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const currentScroll = window.scrollY;
+    const targetTop = rect.top + currentScroll;
+
+    // Hardcoded large offsets to ensure visibility
+    const isMobile = window.matchMedia("(max-width: 767px)").matches;
+    const offset = isMobile ? 0 : 0; // Much larger offsets
+
+    const finalTop = Math.max(0, targetTop - offset);
+    window.scrollTo({ top: finalTop, behavior: "smooth" });
+  };
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
@@ -60,24 +80,40 @@ export default function Home() {
           <div className="hidden md:flex gap-8 text-sm font-medium md:justify-self-center">
             <a
               href="#highlights"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToIdWithOffset("highlights");
+              }}
               className="text-white hover:opacity-60 transition-opacity"
             >
               HIGHLIGHTS
             </a>
             <a
               href="#process"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToIdWithOffset("process");
+              }}
               className="text-white hover:opacity-60 transition-opacity"
             >
               PROCESO
             </a>
             <a
               href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToIdWithOffset("about");
+              }}
               className="text-white hover:opacity-60 transition-opacity"
             >
               SOBRE NOSOTROS
             </a>
             <a
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToIdWithOffset("contact");
+              }}
               className="text-white hover:opacity-60 transition-opacity"
             >
               CONTACTO
@@ -143,28 +179,44 @@ export default function Home() {
               <div className="container-custom py-6 flex flex-col gap-6">
                 <a
                   href="#highlights"
-                  onClick={() => setTimeout(() => setMobileMenuOpen(false), 300)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMobileMenuOpen(false);
+                    setTimeout(() => scrollToIdWithOffset("highlights"), 300);
+                  }}
                   className="text-lg font-medium text-white hover:text-white/60"
                 >
                   HIGHLIGHTS
                 </a>
                 <a
                   href="#process"
-                  onClick={() => setTimeout(() => setMobileMenuOpen(false), 300)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMobileMenuOpen(false);
+                    setTimeout(() => scrollToIdWithOffset("process"), 300);
+                  }}
                   className="text-lg font-medium text-white hover:text-white/60"
                 >
                   PROCESO
                 </a>
                 <a
                   href="#about"
-                  onClick={() => setTimeout(() => setMobileMenuOpen(false), 300)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMobileMenuOpen(false);
+                    setTimeout(() => scrollToIdWithOffset("about"), 300);
+                  }}
                   className="text-lg font-medium text-white hover:text-white/60"
                 >
                   SOBRE NOSOTROS
                 </a>
                 <a
                   href="#contact"
-                  onClick={() => setTimeout(() => setMobileMenuOpen(false), 300)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMobileMenuOpen(false);
+                    setTimeout(() => scrollToIdWithOffset("contact"), 300);
+                  }}
                   className="text-lg font-medium text-white hover:text-white/60"
                 >
                   CONTACTO

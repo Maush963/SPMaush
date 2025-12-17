@@ -11,24 +11,29 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    question: "¿CUÁNTO TOMA HACER UN PROYECTO WEB?",
+    question: "¿CUÁNTO TIEMPO NECESITO INVERTIR?",
     answer:
-      "El tiempo varía según la complejidad. Un sitio web básico puede tomar 2-3 semanas, mientras que proyectos más complejos pueden requerir 6-12 semanas.",
+      "El proceso está pensado para ser eficiente: al inicio dedicamos el tiempo necesario para entender la visión, los objetivos y las prioridades.\n\nDespués de eso, el trabajo corre de nuestro lado. Tu participación se limita a aprobaciones puntuales y feedback claro.",
   },
   {
-    question: "¿QUÉ NECESITO PARA EMPEZAR?",
+    question: "¿CUÁNDO VERÉ RESULTADOS?",
     answer:
-      "Solo necesitas una visión clara de tu proyecto. Nosotros te guiaremos en el resto: diseño, desarrollo, contenido y estrategia digital.",
+      "Diseñamos y construimos tu sitio de alta conversión en 2 a 4 semanas, dependiendo de la complejidad del proyecto.\n\nDe inicio a lanzamiento, velocidad pura.",
   },
   {
-    question: "¿OFRECEN SOPORTE DESPUÉS DEL LANZAMIENTO?",
+    question: "¿Y SI NO ME GUSTA EL DISEÑO?",
     answer:
-      "Sí, ofrecemos paquetes de mantenimiento y soporte continuo para asegurar que tu sitio web funcione perfectamente.",
+      "El objetivo es que el sitio se sienta correcto, no impuesto.\n\nEl proceso incluye revisiones para ajustar el diseño y asegurarnos de que la interfaz y el mensaje estén alineados con lo que necesitas comunicar.",
   },
   {
-    question: "¿TRABAJAN CON CLIENTES INTERNACIONALES?",
+    question: "¿OFRECEN PLANES DE PAGO?",
     answer:
-      "Absolutamente. Trabajamos con clientes de todo el mundo gracias a nuestras herramientas de comunicación digital.",
+      "Sí. Puedes pagar todo al inicio o dividir el pago en partes.\n\nTodo se define desde el principio, sin cargos escondidos.",
+  },
+  {
+    question: "¿QUÉ PASA SI NECESITO SOPORTE CONTINUO?",
+    answer:
+      "El lanzamiento no es el final. Ofrecemos acompañamiento posterior para ajustes, mejoras y optimización continua.\n\nYa sea mantenimiento, cambios puntuales o pruebas para mejorar resultados, el soporte es directo y sin fricción.",
   },
 ];
 
@@ -46,7 +51,7 @@ const FAQ = () => {
         >
           <div className="flex items-center justify-between mb-16">
             <h2 className="heading-section">preguntas frecuentes</h2>
-            <div className="flex gap-2">
+            <div className="hidden md:flex gap-2">
               {[...Array(5)].map((_, i) => (
                 <motion.div
                   key={i}
@@ -71,7 +76,9 @@ const FAQ = () => {
                 className="border-b border-white/20"
               >
                 <button
-                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
                   className="w-full py-6 flex items-center justify-between text-left group"
                 >
                   <span className="heading-card text-lg md:text-xl pr-8">
@@ -95,7 +102,7 @@ const FAQ = () => {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <p className="pb-6 text-base md:text-lg text-gray-400 leading-relaxed">
+                      <p className="pb-6 text-base md:text-lg text-gray-400 leading-relaxed whitespace-pre-line">
                         {faq.answer}
                       </p>
                     </motion.div>
