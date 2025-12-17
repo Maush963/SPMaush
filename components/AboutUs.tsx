@@ -16,14 +16,11 @@ const AboutUs = () => {
     {
       name: "Mauricio Salas",
       role: "Ingeniero de Software",
-      description:
-        "Construcción con intención, medición constante y ajustes basados en datos.",
       image: "https://maush963.github.io/Imagesformysalespage/Maushh.jpeg",
     },
     {
       name: "Sebastian Ugalde",
       role: "Diseñador Multimedia",
-      description: "Interfaces limpias y experiencias con intención.",
       image: "https://maush963.github.io/Imagesformysalespage/Uger.jpeg",
     },
   ];
@@ -58,43 +55,55 @@ const AboutUs = () => {
           {/* Panel eliminado para evitar huecos y mantener foco en contenido */}
 
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10">
-            {team.map((member, index) => (
-              <motion.article
-                key={index}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.7, delay: index * 0.15 }}
-                className="rounded-2xl overflow-hidden border border-white/10 bg-white/[0.03] backdrop-blur-sm"
-              >
-                <div className="flex flex-col md:flex-row">
-                  {/* Imagen vertical a la izquierda */}
-                  <div className="relative w-full md:w-[48%] h-[420px] md:h-[520px] bg-neutral-900">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                  </div>
-                  {/* Información a la derecha */}
-                  <div className="p-6 md:p-8 md:w-[52%] flex items-center">
-                    <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
-                        {member.name}
-                      </h3>
-                      <p className="text-white/70 font-medium text-xs md:text-sm uppercase tracking-widest mt-2">
-                        {member.role}
-                      </p>
-                      <p className="text-white/60 text-sm md:text-base leading-relaxed mt-3">
-                        {member.description}
-                      </p>
-                      <div className="h-px bg-white/10 mt-6" />
+            {team.map((member, index) => {
+              const [firstName, ...restName] = member.name.split(" ");
+              const lastName = restName.join(" ");
+              return (
+                <motion.article
+                  key={index}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 0.7, delay: index * 0.15 }}
+                  className="rounded-2xl overflow-hidden border border-white/10 bg-white/[0.03] backdrop-blur-sm"
+                >
+                  <div className="flex flex-col md:flex-row">
+                    {/* Imagen vertical a la izquierda */}
+                    <div className="relative w-full md:w-[48%] h-[300px] md:h-[520px] bg-neutral-900">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                    </div>
+                    {/* Información a la derecha */}
+                    <div className="p-6 md:p-8 md:w-[52%] flex items-center">
+                      <div>
+                        <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+                          <span>{firstName}</span>
+                          {lastName && (
+                            <>
+                              <span className="md:hidden"> {lastName}</span>
+                              <span className="hidden md:block">
+                                {lastName}
+                              </span>
+                            </>
+                          )}
+                        </h3>
+                        <p className="text-white/70 font-medium text-xs md:text-sm uppercase tracking-widest mt-2">
+                          {member.role}
+                        </p>
+                        <p className="text-white/60 text-sm md:text-base leading-relaxed mt-3">
+                          {member.description}
+                        </p>
+                        <div className="h-px bg-white/10 mt-6" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.article>
-            ))}
+                </motion.article>
+              );
+            })}
           </div>
 
           {/* Separador y descripción corta de la propuesta */}
