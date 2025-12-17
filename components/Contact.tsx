@@ -37,7 +37,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="mailto:hello@sorelliagency.com"
+            href="mailto:maush.solutions@gmail.com"
             aria-label="Contactar por correo"
             className="inline-flex items-center justify-center rounded-full transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/60"
           >
