@@ -15,21 +15,25 @@ const NewHero = () => {
         >
           <h1 className="heading-hero text-center flex flex-col items-center leading-[0.85]">
             <span 
-              className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-bottom"
+              className="block text-[8vw] md:text-[10vw] leading-none tracking-tighter font-bold origin-bottom"
               style={{ transform: "scaleY(1.3)" }}
             >
-              DIGITAL
+              UN SITIO WEB QUE
             </span>
-            <span className="block text-elegant text-6xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-4 md:-my-8 relative z-10 mix-blend-difference">
-              Excellence
-            </span>
-            <span 
-              className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-top"
-              style={{ transform: "scaleY(1.3)" }}
-            >
-              REDEFINED
+            <span className="block text-elegant text-6xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-2 md:-my-6 relative z-10 mix-blend-difference">
+              CONVIERTE
             </span>
           </h1>
+          
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+            className="mt-12 md:mt-20 max-w-2xl mx-auto text-center text-white/60 text-base md:text-lg lg:text-xl leading-relaxed px-6"
+          >
+            Creamos experiencias digitales que conectan con tus usuarios<br />
+            y cumplen tus objetivos.
+          </motion.p>
         </motion.div>
       </div>
 
