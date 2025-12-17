@@ -2,10 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import CircularMesh from "./CircularMesh";
 
 const NewHero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+      {/* Wireframe Background */}
+      <CircularMesh className="z-0" />
+
       <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -65,9 +69,6 @@ const NewHero = () => {
           (2025)
         </div>
       </div>
-
-      {/* Background grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000,transparent)] pointer-events-none" />
     </section>
   );
 };
