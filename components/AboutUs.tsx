@@ -14,16 +14,16 @@ const AboutUs = () => {
 
   const team = [
     {
-      name: "Maush",
+      name: "Mauricio Salas",
       role: "Ingeniero de Software",
       description: "Arquitecturas escalables, rendimiento y calidad.",
-      image: "/Maushh.jpeg",
+      image: "https://maush963.github.io/Imagesformysalespage/Maushh.jpeg",
     },
     {
-      name: "Uga",
+      name: "Sebastian Ugalde",
       role: "Diseñador Multimedia",
       description: "Interfaces limpias y experiencias con intención.",
-      image: "/Uger.jpeg",
+      image: "https://maush963.github.io/Imagesformysalespage/Uger.jpeg",
     },
   ];
 
@@ -106,10 +106,10 @@ const AboutUs = () => {
           >
             <div className="h-px w-24 bg-white/10 mx-auto mb-6" />
             <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-center">
-              En Sorelli, con bases sólidas de diseño y software, centramos el
-              esfuerzo en una estrategia que venda. Al cubrir ambas disciplinas,
-              enfocamos cada proyecto en convertir: estética clara, tecnología
-              fiable y resultados medibles.
+              En Sorelli, con bases sólidas en diseño y software, el trabajo se
+              enfoca en una estrategia clara: comunicar mejor para convertir.
+              Cada proyecto equilibra estética, tecnología y resultados
+              medibles.
             </p>
           </motion.div>
         </div>

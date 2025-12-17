@@ -8,26 +8,34 @@ interface Step {
   number: string;
   title: string;
   description: string;
+  image?: string;
+  images?: string[]; // For A/B test display
 }
 
 const steps: Step[] = [
   {
     number: "01",
-    title: "RESEARCH & STRATEGY",
+    title: "Investigación y estrategia",
     description:
-      "Analizamos tu marca, competencia y audiencia para crear una estrategia digital sólida.",
+      "Analizamos la marca, la audiencia y el contexto para definir el mensaje correcto, el enfoque visual y la estructura del sitio.",
+    image: "https://maush963.github.io/Imagesformysalespage/1stage.jpg",
   },
   {
     number: "02",
-    title: "DESIGN & DEVELOPMENT",
+    title: "Diseño y desarrollo",
     description:
-      "Diseñamos interfaces elegantes y desarrollamos sitios web rápidos y confiables.",
+      "Con esa base, diseñamos interfaces claras y coherentes, donde cada texto y elemento visual responde a una intención concreta.",
+    image: "https://maush963.github.io/Imagesformysalespage/stage2.png",
   },
   {
     number: "03",
-    title: "LAUNCH & SCALE",
+    title: "Lanzamiento y escala",
     description:
-      "Lanzamos tu proyecto y te ayudamos a escalar tu presencia digital.",
+      "Publicamos, observamos cómo interactúan las personas y optimizamos la experiencia para que el proyecto crezca con sentido.",
+    images: [
+      "https://maush963.github.io/Imagesformysalespage/stage4.png",
+      "https://maush963.github.io/Imagesformysalespage/stage3-1.png",
+    ], // A/B test images
   },
 ];
 
@@ -101,8 +109,8 @@ const HowItWorks = () => {
           className="mb-20 md:mb-32 text-center"
         >
           <h2 className="heading-section">
-            COMO <br />
-            <span className="text-white/50">TRABAJAMOS</span>
+            el proceso <br />
+            <span className="text-white/50">paso a paso</span>
           </h2>
         </motion.div>
 
@@ -157,7 +165,7 @@ const TimelineItem = ({
     target: ref,
     // Móvil: activa cerca del borde superior; Desktop: alrededor del centro
     offset: isMobile
-      ? ["start 80%", "start 65%"]
+      ? ["start 60%", "start 45%"]
       : ["center 55%", "center 45%"],
   });
   // Calcular la posición del punto respecto al contenedor y activar por progreso
@@ -231,19 +239,77 @@ const TimelineItem = ({
         className="w-full md:w-1/2 pl-12 md:pl-0"
       >
         <div
-          className={`relative aspect-[4/3] bg-white/5 backdrop-blur-sm border border-white/10 overflow-hidden ${
+          className={`relative aspect-[4/3] overflow-visible ${
             isEven
               ? "rounded-[2rem] rounded-tr-[5rem]"
               : "rounded-[2rem] rounded-tl-[5rem]"
           }`}
         >
-          {/* Placeholder Abstract Content */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-20 h-20 rounded-full bg-white/5 animate-pulse" />
-          </div>
+          {/* Single Image Display */}
+          {step.image && (
+            <div
+              className={`relative w-full h-full overflow-hidden rounded-inherit ${
+                index === 1
+                  ? ""
+                  : "bg-white/5 backdrop-blur-sm border border-white/10"
+              }`}
+            >
+              <img
+                src={step.image}
+                alt={step.title}
+                className={`w-full h-full ${
+                  index === 1 ? "object-contain" : "object-cover"
+                }`}
+              />
+              {/* Animated Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />
+            </div>
+          )}
 
-          {/* Animated Overlay on Hover */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />
+          {/* Dual Image Display (Poker Card Style for A/B Test) */}
+          {step.images && step.images.length === 2 && (
+            <div className="relative w-full h-full">
+              {/* First Card - Bottom Layer */}
+              <motion.div
+                initial={{ opacity: 0, rotate: -8, x: -20 }}
+                whileInView={{ opacity: 1, rotate: -6, x: -15 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="absolute inset-0 bg-white/5 backdrop-blur-sm border border-white/10 overflow-hidden rounded-inherit shadow-2xl"
+                style={{
+                  transform: "rotate(-6deg) translateX(-15px)",
+                  zIndex: 1,
+                }}
+              >
+                <img
+                  src={step.images[0]}
+                  alt={`${step.title} - Versión A`}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent" />
+              </motion.div>
+
+              {/* Second Card - Top Layer */}
+              <motion.div
+                initial={{ opacity: 0, rotate: 8, x: 20 }}
+                whileInView={{ opacity: 1, rotate: 5, x: 15 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="absolute inset-0 bg-white/5 backdrop-blur-sm border border-white/10 overflow-hidden rounded-inherit shadow-2xl hover:z-30 hover:scale-105 transition-all duration-300"
+                style={{
+                  transform: "rotate(5deg) translateX(15px)",
+                  zIndex: 2,
+                }}
+              >
+                <img
+                  src={step.images[1]}
+                  alt={`${step.title} - Versión B`}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />
+              </motion.div>
+            </div>
+          )}
         </div>
       </motion.div>
     </motion.div>

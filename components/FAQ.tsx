@@ -45,7 +45,7 @@ const FAQ = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="flex items-center justify-between mb-16">
-            <h2 className="heading-section">FAQ IT</h2>
+            <h2 className="heading-section">preguntas frecuentes</h2>
             <div className="flex gap-2">
               {[...Array(5)].map((_, i) => (
                 <motion.div

@@ -10,7 +10,34 @@ export const navItems = [
 export const projects = [
   {
     id: 1,
-    title: "Charleads - Leadsales",
+    title: "Arquiplanner ",
+    des: "Landing page diseñada con copywriting persuasivo y guion VSL para maximizar conversiones, desarrollada en Next.js y Tailwind para velocidad y escalabilidad.",
+    img: "https://maush963.github.io/Imagesformysalespage/stage3-1.png",
+    iconLists: [
+      "https://maush963.github.io/Imagesformysalespage/nextjs.png",
+      "https://maush963.github.io/Imagesformysalespage/tail.svg",
+    ],
+    link: "https://arquiplanner.com", // Placeholder link, update if known
+    imgClass:
+      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
+  },
+  {
+    id: 2,
+    title: "SOMEFIPP ",
+    des: "Landing page institucional desarrollada en React, enfocada en presentar información clara y estructurada para la organización.",
+    img: "https://maush963.github.io/Imagesformysalespage/stage4.png",
+    iconLists: [
+      "https://maush963.github.io/Imagesformysalespage/React.png",
+      "https://maush963.github.io/Imagesformysalespage/tail.svg",
+
+    ],
+    link: "https://somefipp.com", // Placeholder link, update if known
+    imgClass:
+      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
+  },
+  {
+    id: 3,
+    title: "Leadsales ",
     des: "Página de analítica para la empresa Leadsales, enfocada en mostrar datos clave y respaldar la toma de decisiones estratégicas.",
     img: "https://maush963.github.io/Imagesformysalespage/Charleads.jpeg",
     iconLists: [
@@ -20,44 +47,6 @@ export const projects = [
       "https://maush963.github.io/Imagesformysalespage/Php.png",
     ],
     link: "https://github.com/A01705840/CCC_LeadSales",
-    imgClass:
-      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
-  },
-  {
-    id: 2,
-    title: "SoffyApp - Fundación Soffy",
-    des: "Página web/app clínica para Fundación Soffy sin fines de lucro que centraliza expedientes y agiliza flujos administrativos con enfoque en seguridad y eficiencia.",
-    img: "https://maush963.github.io/Imagesformysalespage/Soffyapp.png",
-    iconLists: [
-      "https://maush963.github.io/Imagesformysalespage/node.png",
-      "https://maush963.github.io/Imagesformysalespage/kotlin-1-logo.png",
-      "https://maush963.github.io/Imagesformysalespage/bulma.png",
-      "https://maush963.github.io/Imagesformysalespage/sql.svg",
-    ],
-    link: "https://github.com/netogu1llen/SorelliAgency/",
-    imgClass:
-      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
-  },
-  {
-    id: 3,
-    title: "Sales page - Malky Malk ",
-    des: "Rediseño de página de ventas para servidor de Skool mediante técnicas de copywriting y diseño estratégico para aumentar las conversiones.",
-    img: "https://maush963.github.io/Imagesformysalespage/Malk.png",
-    iconLists: ["https://maush963.github.io/Imagesformysalespage/canva.png"],
-    link: "https://malkymalk.my.canva.site/",
-    imgClass:
-      "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
-  },
-  {
-    id: 4,
-    title: "Sistema de tickets - KGC ",
-    des: "Un sistema de tickets para la empresa KGC, que permite a los empleados gestionar y dar seguimiento a tareas de manera eficiente.",
-    img: "https://maush963.github.io/Imagesformysalespage/KGC.png",
-    iconLists: [
-      "https://maush963.github.io/Imagesformysalespage/nextjs.png",
-      "https://maush963.github.io/Imagesformysalespage/tail.svg",
-    ],
-    link: "https://github.com/IramKGC/TicketMasterKGC",
     imgClass:
       "w-5/6 h-auto max-w-3/4 max-h-3/4 object-contain rounded-lg transform rotate-3 bottom-1 shadow-lg shadow-ring",
   },

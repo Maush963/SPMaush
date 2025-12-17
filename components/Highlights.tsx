@@ -19,12 +19,11 @@ interface Project {
 // Enhanced projects with metadata
 const enhancedProjects: Project[] = projects.map((project, index) => ({
   ...project,
-  year: ["2024", "2024", "2023", "2024"][index],
+  year: ["2025", "2025", "2024"][index],
   category: [
-    "WEB DESIGN // ANALYTICS // DASHBOARD",
-    "MOBILE APP // HEALTHCARE // CLINIC",
-    "SALES PAGE // COPYWRITING // DESIGN",
-    "TICKETING SYSTEM // ENTERPRISE // NEXTJS",
+    "DISEÑO WEB // COPYWRITING // NEXTJS",
+    "DISEÑO WEB // SALUD // REACT",
+    "DISEÑO WEB // ANALÍTICA // EJS",
   ][index],
 }));
 

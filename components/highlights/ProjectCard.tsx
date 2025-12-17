@@ -50,8 +50,8 @@ export const ProjectCard = ({
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent rounded-lg" />
 
           {/* Year - Solo desktop */}
-          <div className="hidden md:block absolute -top-8 -right-4 md:-top-12 md:-right-8 z-0">
-            <span className="text-6xl md:text-[8rem] font-black text-white/10 leading-none">
+          <div className="hidden md:block absolute -top-8 -right-4 md:-top-12 md:-right-8 z-0 mix-blend-difference">
+            <span className="text-6xl md:text-[8rem] font-black text-white leading-none opacity-30">
               {project.year}
             </span>
           </div>
@@ -91,7 +91,9 @@ export const ProjectCard = ({
                   <img
                     src={icon}
                     alt="tech"
-                    className="w-5 h-5 object-contain"
+                    className={`w-5 h-5 object-contain ${
+                      icon.includes("nextjs") ? "invert" : ""
+                    }`}
                   />
                 </div>
               ))}
@@ -117,7 +119,9 @@ export const ProjectCard = ({
                 <img
                   src={icon}
                   alt="tech"
-                  className="w-5 h-5 object-contain"
+                  className={`w-5 h-5 object-contain ${
+                    icon.includes("nextjs") ? "invert" : ""
+                  }`}
                 />
               </div>
             ))}

@@ -6,6 +6,8 @@ interface AnimatedTextProps {
   text: string;
   delay?: number;
   className?: string;
+  isVisible?: boolean;
+  scrollDirection?: "up" | "down";
 }
 
 /**
@@ -15,6 +17,8 @@ export const AnimatedText = ({
   text,
   delay = 0,
   className = "",
+  isVisible = true,
+  scrollDirection = "down",
 }: AnimatedTextProps) => {
   const letters = text.split("");
 
