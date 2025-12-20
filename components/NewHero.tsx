@@ -18,8 +18,8 @@ const NewHero = () => {
           className="relative z-10 flex flex-col items-center justify-center"
         >
           <h1 className="heading-hero text-center flex flex-col items-center leading-[0.85]">
-            <span 
-              className="block text-[8vw] md:text-[10vw] leading-none tracking-tighter font-bold origin-bottom"
+            <span
+              className="block text-[8vw] md:text-[8vw] leading-none tracking-tighter font-bold origin-bottom md:whitespace-nowrap"
               style={{ transform: "scaleY(1.3)" }}
             >
               UN SITIO WEB QUE
@@ -28,15 +28,15 @@ const NewHero = () => {
               CONVIERTE
             </span>
           </h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
             className="mt-12 md:mt-20 max-w-2xl mx-auto text-center text-white/60 text-base md:text-lg lg:text-xl leading-relaxed px-6"
           >
-            Creamos experiencias digitales que conectan con tus usuarios<br />
-            y cumplen tus objetivos.
+            Creamos experiencias digitales que conectan con tus usuarios
+            <br />y cumplen tus objetivos.
           </motion.p>
         </motion.div>
       </div>
@@ -44,9 +44,7 @@ const NewHero = () => {
       {/* Footer Info */}
       <div className="absolute bottom-8 left-0 right-0 px-6 md:px-12 flex justify-between items-end text-[10px] md:text-xs font-medium tracking-widest text-white/40 z-20 uppercase">
         {/* Left: Location */}
-        <div className="text-left">
-          Based in Mexico // Global Reach
-        </div>
+        <div className="text-left">Based in Mexico // Global Reach</div>
 
         {/* Center: Scroll Indicator */}
         <motion.div
@@ -65,9 +63,7 @@ const NewHero = () => {
         </motion.div>
 
         {/* Right: Year */}
-        <div className="text-right">
-          (2025)
-        </div>
+        <div className="text-right">(2025)</div>
       </div>
     </section>
   );
