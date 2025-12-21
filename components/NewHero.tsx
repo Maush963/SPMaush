@@ -19,12 +19,12 @@ const NewHero = () => {
         >
           <h1 className="heading-hero text-center flex flex-col items-center leading-[0.85]">
             <span
-              className="block text-[8vw] md:text-[8vw] leading-none tracking-tighter font-bold origin-bottom md:whitespace-nowrap"
+              className="block text-[10vw] md:text-[8vw] leading-none tracking-tighter font-bold origin-bottom md:whitespace-nowrap"
               style={{ transform: "scaleY(1.3)" }}
             >
               UN SITIO WEB QUE
             </span>
-            <span className="block text-elegant text-6xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-2 md:-my-6 relative z-10 mix-blend-difference">
+            <span className="block text-elegant text-4xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-2 md:-my-6 relative z-10 mix-blend-difference">
               CONVIERTE
             </span>
           </h1>
@@ -51,7 +51,7 @@ const NewHero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.8 }}
-          className="absolute left-1/2 -translate-x-1/2 bottom-0 md:bottom-2"
+          className="hidden md:block absolute left-1/2 -translate-x-1/2 bottom-0 md:bottom-2"
         >
           <div className="w-5 h-8 md:w-6 md:h-10 border-2 border-white/30 rounded-full flex justify-center p-2">
             <motion.div
