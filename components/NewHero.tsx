@@ -14,7 +14,7 @@ const NewHero = () => {
           className="relative z-10 flex flex-col items-center justify-center"
         >
           <h1 className="heading-hero text-center flex flex-col items-center leading-[0.85]">
-            <span 
+            <span
               className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-bottom"
               style={{ transform: "scaleY(1.3)" }}
             >
@@ -23,7 +23,7 @@ const NewHero = () => {
             <span className="block text-elegant text-6xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-4 md:-my-8 relative z-10 mix-blend-difference">
               Excellence
             </span>
-            <span 
+            <span
               className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-top"
               style={{ transform: "scaleY(1.3)" }}
             >
@@ -36,9 +36,7 @@ const NewHero = () => {
       {/* Footer Info */}
       <div className="absolute bottom-8 left-0 right-0 px-6 md:px-12 flex justify-between items-end text-[10px] md:text-xs font-medium tracking-widest text-white/40 z-20 uppercase">
         {/* Left: Location */}
-        <div className="text-left">
-          Based in Mexico // Global Reach
-        </div>
+        <div className="text-left">Based in Mexico // Global Reach</div>
 
         {/* Center: Scroll Indicator */}
         <motion.div
@@ -57,9 +55,7 @@ const NewHero = () => {
         </motion.div>
 
         {/* Right: Year */}
-        <div className="text-right">
-          (2025)
-        </div>
+        <div className="text-right">(2026)</div>
       </div>
 
       {/* Background grid pattern */}

@@ -56,7 +56,7 @@ const Contact = () => {
 
         {/* Copyright */}
         <p className="mt-12 text-center text-sm text-white/60">
-          © 2025 Sorelli Agency. Todos los derechos reservados.
+          © 2026 Sorelli Agency. Todos los derechos reservados.
         </p>
       </div>
     </section>
