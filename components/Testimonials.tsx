@@ -58,7 +58,7 @@ const Testimonials = () => {
           <div className="relative">
             {/* Quote Icon */}
             <div className="absolute -top-4 -left-2 md:-left-8 text-white/10 text-6xl md:text-8xl font-serif leading-none">
-              "
+              &ldquo;
             </div>
 
             {/* Quote Text */}
@@ -95,7 +95,7 @@ const Testimonials = () => {
 
             {/* Closing Quote */}
             <div className="absolute -bottom-4 right-0 md:right-4 text-white/10 text-6xl md:text-8xl font-serif leading-none">
-              "
+              &rdquo;
             </div>
           </div>
         </motion.div>
