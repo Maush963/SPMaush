@@ -2,10 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import CircularMesh from "./CircularMesh";
 
 const NewHero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+      {/* Wireframe Background */}
+      <CircularMesh className="z-0" />
+
       <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -15,21 +19,25 @@ const NewHero = () => {
         >
           <h1 className="heading-hero text-center flex flex-col items-center leading-[0.85]">
             <span
-              className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-bottom"
+              className="block text-[10vw] md:text-[8vw] leading-none tracking-tighter font-bold origin-bottom md:whitespace-nowrap"
               style={{ transform: "scaleY(1.3)" }}
             >
-              DIGITAL
+              UN SITIO WEB QUE
             </span>
-            <span className="block text-elegant text-6xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-4 md:-my-8 relative z-10 mix-blend-difference">
-              Excellence
-            </span>
-            <span
-              className="block text-[12vw] md:text-[14vw] leading-none tracking-tighter font-bold origin-top"
-              style={{ transform: "scaleY(1.3)" }}
-            >
-              REDEFINED
+            <span className="block text-elegant text-4xl md:text-8xl lg:text-9xl font-thin text-white/40 -my-2 md:-my-6 relative z-10 mix-blend-difference">
+              CONVIERTE
             </span>
           </h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+            className="mt-12 md:mt-20 max-w-2xl mx-auto text-center text-white/60 text-base md:text-lg lg:text-xl leading-relaxed px-6"
+          >
+            Para negocios y marcas personales que venden en línea y quieren
+            resultados medibles, no solo diseño.
+          </motion.p>
         </motion.div>
       </div>
 
@@ -43,7 +51,7 @@ const NewHero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.8 }}
-          className="absolute left-1/2 -translate-x-1/2 bottom-0 md:bottom-2"
+          className="hidden md:block absolute left-1/2 -translate-x-1/2 bottom-0 md:bottom-2"
         >
           <div className="w-5 h-8 md:w-6 md:h-10 border-2 border-white/30 rounded-full flex justify-center p-2">
             <motion.div
@@ -57,9 +65,6 @@ const NewHero = () => {
         {/* Right: Year */}
         <div className="text-right">(2026)</div>
       </div>
-
-      {/* Background grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000,transparent)] pointer-events-none" />
     </section>
   );
 };

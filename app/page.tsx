@@ -15,6 +15,7 @@ import ServicesCircle from "@/components/ServicesCircle";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import AboutUs from "@/components/AboutUs";
+import Testimonials from "@/components/Testimonials";
 import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
@@ -87,6 +88,16 @@ export default function Home() {
               className="text-white hover:opacity-60 transition-opacity"
             >
               HIGHLIGHTS
+            </a>
+            <a
+              href="#testimonials"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToIdWithOffset("testimonials");
+              }}
+              className="text-white hover:opacity-60 transition-opacity"
+            >
+              TESTIMONIOS
             </a>
             <a
               href="#process"
@@ -189,6 +200,17 @@ export default function Home() {
                   HIGHLIGHTS
                 </a>
                 <a
+                  href="#testimonials"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMobileMenuOpen(false);
+                    setTimeout(() => scrollToIdWithOffset("testimonials"), 300);
+                  }}
+                  className="text-lg font-medium text-white hover:text-white/60"
+                >
+                  TESTIMONIOS
+                </a>
+                <a
                   href="#process"
                   onClick={(e) => {
                     e.preventDefault();
@@ -232,6 +254,7 @@ export default function Home() {
       <TheProblem />
       <ServicesCircle />
       <Highlights />
+      <Testimonials />
       <HowItWorks />
       <AboutUs />
       <FAQ />

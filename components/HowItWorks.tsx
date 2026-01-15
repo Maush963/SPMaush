@@ -277,7 +277,6 @@ const TimelineItem = ({
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="absolute inset-0 bg-white/5 backdrop-blur-sm border border-white/10 overflow-hidden rounded-inherit shadow-2xl"
                 style={{
-                  transform: "rotate(-6deg) translateX(-15px)",
                   zIndex: 1,
                 }}
               >
@@ -297,7 +296,6 @@ const TimelineItem = ({
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="absolute inset-0 bg-white/5 backdrop-blur-sm border border-white/10 overflow-hidden rounded-inherit shadow-2xl hover:z-30 hover:scale-105 transition-all duration-300"
                 style={{
-                  transform: "rotate(5deg) translateX(15px)",
                   zIndex: 2,
                 }}
               >
